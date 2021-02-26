@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ol4juwon">
+    <title>ELLCAR:</title>
+   <link rel="icon" href="img/ellcar.png">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/ellcar.png" height="100px" width="100px" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a active href="index.html"> Home</a></li>
+                <li><a href="services.html"> Services</a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li><a href="contact.html">Contact </a> </li>
+            </ul>
+        </div>
+        <div class="text-content">
+            <h2>Ellcar And Alan LTD.</h2>
+            <p>Welcome to Ellcar and Alan Limited...</p>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/hospit.jpg">
+                    <div class="glass">
+                        <span>Hospitality<a href="services.html"></a> </span>
+                        <p>We have a team of seasoned professionals that invests in the hospitality sector</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/reales.jpg"> 
+                    <div class="glass">
+                        <span>Real Estate<a href="services.html"></a> </span>
+                        <p>We invest in viable real estate oppurtunities</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/investm.jpg">
+                    <div class="glass">
+                        <span>General Investments<a href="services.html"></a> </span>
+                        <p>We have a team of seasoned profesionals that handles your finances while you relax</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/insure.jpg">
+                    <div class="glass">
+                        <span>Insurance <a href=""></a></span>
+                        <p>Backed by a world calss team of professionals we provie top class insurance services at good premiums to our customers</p>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
+<script >
+    let mySwiper = new Swiper('.swiper-container',{speed:1000,direction:'horizontal',autoplay:{
+        delay: 2000
+    },
+            navigation:{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        })
+</script>
+</body>
+</html>

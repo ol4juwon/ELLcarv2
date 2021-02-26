@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg,#10236b 10%, #009FFD 100%);
+}
+body::before,
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+
+}
+body::before{
+    clip-path: circle(30% at left 20%);
+
+    background: linear-gradient(135deg,#009ffd 10%,#10236b 100%);
+}
+body::after{
+    clip-path: circle(25% at right 80%);
+    background: linear-gradient(135deg,#5576ec 10%,#0234529f 100%);
+}
+header{
+    height: 85vh;
+    width: 90%;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(0  , 0, 0, 0.35);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 12;
+
+overflow: auto;
+}
+
+header .navbar{
+    width: 100%;
+    display: flex;
+    padding: 35px 50px;
+    justify-content: space-between;
+}
+
+header .navbar .logo img{
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+header .navbar .menu{
+    display: flex;
+}
+.navbar .menu li{
+
+    list-style: none;
+    margin: 0 6px;
+}
+.navbar .menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.navbar .menu a:hover{
+    color: #f2f2f2;
+
+}
+.navbar .menu a:active{
+    color: #f2f2f2;
+
+}
+
+.text-content{
+width: 40%;
+margin: 20px 0 0 50px;
+}
+.text-content h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text-content p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+@media (max-width:850px){
+    header .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .menu{
+        margin: 10px 0 20px 0;
+    }
+
+    .text-content{
+        width: 70%;
+        margin: 30px 0 0 20px ;
+    }
+
+}
+@media (max-width:410px){
+    header{
+    height: 100vh;
+    width: 100%;
+    }
+}
+
+
+/* slider css */
+
+.swiper-container{
+    width: 75%;
+    height: 45vh;
+    margin: 10px 0 0 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0  , 0, 0, 0.35);
+}
+.swiper-slide img{
+    display: block;
+    width: 100%;
+}
+.glass{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: -50%;
+    padding: 10px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    background-color: rgba(255  , 255, 255, 0.35);
+    color: #000;
+    text-shadow: 0 0 5px rgba(0  , 0, 0, 0.5);
+    transition: bottom .5s ease-in-out ;
+}
+.swiper-slide:hover .glass {
+    bottom: 10px;
+}
+.glass span{
+    display: block;
+    font-size: 20px;
+margin: -10px -10px 0;
+font-weight: 400;
+
+}
+.glass a{
+color: #fff;
+
+}
